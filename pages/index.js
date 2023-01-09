@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-3xl font-bold underline">
+        <h1 className="text-3xl font-bold underline text-center">
           Important: Dont Add Any Content In This Page
         </h1>
       </main>

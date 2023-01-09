@@ -1,12 +1,12 @@
 import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/App.css';
 import { useEffect } from 'react';
 export default function App({ Component, pageProps }) {
 
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.js')
-  }, []);
-
+   useEffect(() => {
+        import ('bootstrap/dist/js/bootstrap.js')
+    }, []);
   return <Component {...pageProps} />
 }
