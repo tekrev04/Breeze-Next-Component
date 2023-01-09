@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer base {
+    h1 {
+      @apply text-primary font-light not-italic text-6xl;
+    }
+    h2 {
+      @apply text-primary-dark font-medium not-italic text-5xl;
+    }
+    h3 {
+      @apply text-primary-light font-semibold not-italic text-3xl;
+    }
+    h4 {
+      @apply text-dark font-medium not-italic text-2xl;
+    }
+    h5 {
+      @apply text-dark font-semibold not-italic text-xl;
+    }
+    h6 {
+      @apply text-dark font-medium not-italic text-lg;
+    }
+  } */
+
+
