@@ -470,8 +470,6 @@
       color: var(--input-text);
   }
   
-  tr > td:last-of-type {
-      /* styling here */
-      font-weight: bold;
-  }
+
+  @import './font_size.css';
   

@@ -7,8 +7,7 @@ function DataTableComponent({ data, columns, classes }) {
         <BootstrapTable classes={classes}
           noDataIndication="No data found"
           bootstrap4
-          striped
-          hover
+          bordered
           tabIndexCell
           condensed keyField='id' data={data} columns={columns} />
       </div>

@@ -27,13 +27,16 @@ export default class DataTablesPage extends Component {
 
         const columns = [{
             dataField: 'id',
-            text: 'ID'
+            text: 'ID',
+            classes: "fs-12 text-dark text-600"
         }, {
             dataField: 'style_id',
-            text: 'Style ID'
+            text: 'Style ID',
+            classes: "fs-12 text-dark text-600"
         }, {
             dataField: 'buyer_name',
-            text: 'Buyer Name'
+            text: 'Buyer Name',
+            classes: "fs-12 text-dark text-600"
         }];
 
         return columns;
