@@ -32,7 +32,7 @@ export default class DataTablesPage extends Component {
         }, {
             dataField: 'style_id',
             text: 'Style ID',
-            classes: "fs-12 text-dark text-600"
+            classes: "fs-12 text-dark text-600 text-center"
         }, {
             dataField: 'buyer_name',
             text: 'Buyer Name',
@@ -55,7 +55,9 @@ export default class DataTablesPage extends Component {
 
         return (
 
-            <div className='container'>
+            <div className='container mt-5'>
+                
+                <div className='card p-3'>
                 <ParisNavComponent />
                 <h3 className='text-center font-bold'> TechRev 4.0 DataTable Component</h3>
                 <div className='row mt-5'>
@@ -91,6 +93,7 @@ export default class DataTablesPage extends Component {
                         </div>
 
                     </div>
+                </div>
                 </div>
 
             </div>

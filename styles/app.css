@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import './core.css';
 :root {
     /* font-family */
     --font-family: "Montserrat";
@@ -475,4 +475,5 @@
   
 
   @import './font_size.css';
+  @import './paris.css';
   
