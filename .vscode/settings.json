@@ -1,6 +1,2 @@
 {
-    "files.exclude": {
-        "**/components/reazul": true,
-        "**/pages/reazul": true
-    }
 }
