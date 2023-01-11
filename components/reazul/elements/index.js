@@ -15,8 +15,33 @@ function ElementsComponent() {
                 btnText={"btn-primary"}
                 btnIcon={<BsPlusLg />}
                 btnOnClick={handleClick}
+                disabled={false}
+            />
+            <ButtonComponent
+                class={"outline-primary"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                btnOnClick={handleClick}
+                disabled={true}
             />
            
+            <ButtonComponent
+                class={"btn-primary"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                btnOnClick={handleClick}
+                disabled={true}
+            />
+           
+            <ButtonComponent
+                class={"btn-primary"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                btnOnClick={handleClick}
+                disabled={false}
+            />
+           
+
         </div>
     );
 }

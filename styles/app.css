@@ -5,475 +5,472 @@
     --font-family: "Montserrat";
 
     /* Text Colors */
-    --text-primary: #5873CF;
+    --text-primary: #5873cf;
     --text-secondary: #515151;
-    --text-success: #50AF47;
-    --text-info: #79BDAB;
-    --text-warning: #FFEE11;
-    --text-danger: #FF5500;
+    --text-success: #50af47;
+    --text-info: #79bdab;
+    --text-warning: #ffee11;
+    --text-danger: #ff5500;
     --text-dark: #000000;
-    --text-deactive: #7C7C7C;
+    --text-deactive: #7c7c7c;
     --text-white: #ffffff;
 
     /* Theme Color */
-    --primary: #5873CF;
-    --primary-dark: #4564CA;
-    --primary-light: #B5C1EA;
+    --primary: #5873cf;
+    --primary-dark: #4564ca;
+    --primary-light: #b5c1ea;
 
     --secondary: #515151;
 
-    --success: #50AF47;
-    --success-dark: #447F40;
-    --success-light: #81BE6E;
+    --success: #50af47;
+    --success-dark: #447f40;
+    --success-light: #81be6e;
 
-    --info: #79BDAB;
-    --info-dark: #6CA898;
-    --info-light: #AFD7CD;
+    --info: #79bdab;
+    --info-dark: #6ca898;
+    --info-light: #afd7cd;
 
-    --warning: #FFEE11;
-    --warning-dark: #E7D728;
-    --warning-light: #FEF28B;
+    --warning: #ffee11;
+    --warning-dark: #e7d728;
+    --warning-light: #fef28b;
 
-    --danger: #FF5500;
-    --danger-dark: #C14F27;
-    --danger-light: #F3723A;
+    --danger: #ff5500;
+    --danger-dark: #c14f27;
+    --danger-light: #f3723a;
 
     --dark: #000000;
     --dark-900: #515151;
-    --dark-800: #7C7C7C;
-    --dark-700: #A8A8A8;
-    --dark-600: #D3D3D3;
-    --dark-500: #EAEAEA;
-    --dark-400: #F5F5F5;
+    --dark-800: #7c7c7c;
+    --dark-700: #a8a8a8;
+    --dark-600: #d3d3d3;
+    --dark-500: #eaeaea;
+    --dark-400: #f5f5f5;
 
-    --light: #FFFFFF;
+    --light: #ffffff;
 
     /* for diactive */
-    --deactive: #EAEAEA;
-    --deactive-dark: #A8A8A8;
+    --deactive: #eaeaea;
+    --deactive-dark: #a8a8a8;
 
     /* for input field */
-    --input-border: #7C7C7C;
-    --input-text: #A8A8A8;
+    --input-border: #7c7c7c;
+    --input-text: #a8a8a8;
 
-    --input-border-focus: #50AF47;
-    --input-text-focus: #50AF47;
+    --input-border-focus: #50af47;
+    --input-text-focus: #50af47;
 }
 
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: var(--font-family);
-  }
-  
-  /* ******************* Typography ******************* */
-  /* Heading */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-      font-family: var(--font-family);
-      font-style: normal;
-      color: var(--text-dark);
-  }
-  
-  h1,
-  h4,
-  h5,
-  h6 {
-      letter-spacing: 0.2px;
-  }
-  
-  h1 {
-      font-weight: 300;
-      font-size: 52px;
-      line-height: 64px;
-      letter-spacing: 0.2px;
-  }
-  
-  h2 {
-      font-weight: 500;
-      font-size: 44px;
-      line-height: 54px;
-  }
-  
-  h3 {
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 42px;
-      letter-spacing: 0.1px;
-  }
-  
-  h4 {
-      font-weight: 500;
-      font-size: 26px;
-      line-height: 32px;
-      letter-spacing: 0.2px;
-  }
-  
-  h5 {
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 26px;
-      letter-spacing: 0.2px;
-  }
-  
-  h6 {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: 0.2px;
-  }
-  
-  .text-400 {
-      font-weight: 400;
-  }
-  .text-500 {
-      font-weight: 500;
-  }
-  .text-600 {
-      font-weight: 600;
-  }
-  .text-700 {
-      font-weight: 700;
-  }
-  .text-800 {
-      font-weight: 800;
-  }
-  .text-900 {
-      font-weight: 900;
-  }
-  
-  .subtitle-1 {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.1px;
-  }
-  
-  .subtitle-2 {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: 0.1px;
-  }
-  
-  .body-1 {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.1px;
-  }
-  
-  .body-2 {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: 0.1px;
-  }
-  
-  .small-1 {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 0.2px;
-  }
-  
-  .small-2 {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 0.2px;
-  }
-  
-  /* ********** Text-color ********** */
-  .text-primary {
-      color: var(--text-primary) !important;
-  }
-  .text-secondary {
-      color: var(--text-secondary) !important;
-  }
-  .text-success {
-      color: var(--text-success) !important;
-  }
-  .text-info {
-      color: var(--text-info) !important;
-  }
-  .text-warning {
-      color: var(--text-warning) !important;
-  }
-  .text-danger {
-      color: var(--text-danger) !important;
-  }
-  .text-dark {
-      color: var(--text-dark) !important;
-  }
-  .text-deactive {
-      color: var(--text-deactive) !important;
-  }
-  .text-white {
-      color: var(--text-white) !important;
-  }
-  
-  /* ********** Background-color ********** */
-  .bg-primary {
-      background: var(--primary) !important;
-  }
-  .bg-secondary {
-      background: var(--secondary) !important;
-  }
-  .bg-success {
-      background: var(--success) !important;
-  }
-  .bg-info {
-      background: var(--info) !important;
-  }
-  .bg-warning {
-      background: var(--warning) !important;
-  }
-  .bg-danger {
-      background: var(--danger) !important;
-  }
-  .bg-light {
-      background: var(--light) !important;
-  }
-  .bg-dark {
-      background: var(--dark) !important;
-  }
-  
-  /* ********** btn ********** */
-  .btn {
-      font-family: var(--font-family);
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      vertical-align: middle;
-      padding: 0.375rem 0.75rem;
-      margin: 0.25rem;
-      border-radius: 4px;
-      border: none;
-      border: 1px solid transparent;
-      cursor: pointer;
-  }
-  .btn:focus {
-      outline: none;
-      box-shadow: none;
-  }
-  .btn-flex {
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      padding-left: 20px;
-  }
-  .btn-flex span {
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      padding: 0 0.75rem;
-  }
-  
-  /* btn hover color */
-  .btn-primary {
-      background: var(--primary) !important;
-  }
-  .btn-primary:hover {
-      background: var(--primary-dark) !important;
-  }
-  .outline-primary {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* ******************* Typography ******************* */
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    font-style: normal;
+    color: var(--text-dark);
+}
+
+h1,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.2px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 54px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.1px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.text-400 {
+    font-weight: 400;
+}
+.text-500 {
+    font-weight: 500;
+}
+.text-600 {
+    font-weight: 600;
+}
+.text-700 {
+    font-weight: 700;
+}
+.text-800 {
+    font-weight: 800;
+}
+.text-900 {
+    font-weight: 900;
+}
+
+.subtitle-1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.subtitle-2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.body-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.body-2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+.small-1 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+
+.small-2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+
+/* ********** Text-color ********** */
+.text-primary {
+    color: var(--text-primary) !important;
+}
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+.text-success {
+    color: var(--text-success) !important;
+}
+.text-info {
+    color: var(--text-info) !important;
+}
+.text-warning {
+    color: var(--text-warning) !important;
+}
+.text-danger {
+    color: var(--text-danger) !important;
+}
+.text-dark {
+    color: var(--text-dark) !important;
+}
+.text-deactive {
+    color: var(--text-deactive) !important;
+}
+.text-white {
+    color: var(--text-white) !important;
+}
+
+/* ********** Background-color ********** */
+.bg-primary {
+    background: var(--primary) !important;
+}
+.bg-secondary {
+    background: var(--secondary) !important;
+}
+.bg-success {
+    background: var(--success) !important;
+}
+.bg-info {
+    background: var(--info) !important;
+}
+.bg-warning {
+    background: var(--warning) !important;
+}
+.bg-danger {
+    background: var(--danger) !important;
+}
+.bg-light {
+    background: var(--light) !important;
+}
+.bg-dark {
+    background: var(--dark) !important;
+}
+
+/* ********** btn ********** */
+.btn {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: middle;
+    padding: 0.375rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-flex {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.btn-flex span {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+}
+
+/* btn hover color */
+.btn-primary {
+    background: var(--primary);
+    color: var(--light);
+}
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+.outline-primary {
     border: 1px solid var(--primary);
     color: var(--primary);
 }
-  
-  .btn-success {
-      background: var(--success) !important;
-  }
-  .btn-success:hover {
-      background: var(--success-dark) !important;
-  }
-  
-  .btn-info {
-      background: var(--info) !important;
-      color: var(--text-white) !important;
-  }
-  .btn-info:hover {
-      background: var(--info-dark) !important;
-  }
-  
-  .btn-warning {
-      background: var(--warning) !important;
-  }
-  .btn-warning:hover {
-      background: var(--warning-dark) !important;
-  }
-  
-  .btn-danger {
-      background: var(--danger) !important;
-  }
-  .btn-danger:hover {
-      background: var(--danger-dark) !important;
-  }
-  
-  .disable {
-      background: var(--deactive);
-      color: var(--text-deactive);
-  }
-  .disable:hover {
-      background: var(--deactive-dark) !important;
-  }
-  
-  /* ********** badge ********** */
-  .badge {
-      border-radius: 2rem;
-      padding-right: 0.6em;
-      padding-left: 0.6em;
-      border-radius: 10rem;
-      display: inline-block;
-      padding: 0.25em 0.4em;
-      line-height: 1;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: baseline;
-      border-radius: 0.25rem;
-      border: none;
-      font-family: var(--font-family);
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
-      margin: 0.1rem 0.1rem;
-  }
-  
-  /* ********** Line Input Field ********** */
-  .teknovus-input-group {
-      position: relative;
-      margin: 20px 0;
-  }
-  .teknovus-input {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.1px;
-      outline: none;
-      display: block;
-      width: 100%;
-      outline: none;
-      border: none;
-      border-bottom: 1px solid var(--input-border);
-      padding: 0.375rem 1.2rem;
-      color: var(--text-dark);
-      -webkit-appearance: none;
-  }
-  .teknovus-label {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 0.2px;
-      position: absolute;
-      opacity: 0;
-      left: 0;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      color: var(--input-border-focus);
-  }
-  .teknovus-input::placeholder {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 0.1px;
-  }
-  .teknovus-input:focus {
-      border: none;
-      border-bottom: 1.5px solid var(--input-border-focus);
-  }
-  .teknovus-input:focus + .teknovus-label,
-  .teknovus-input:invalid + .teknovus-label {
-      bottom: 95%;
-      line-height: 1;
-      opacity: 1;
-      padding: 4px;
-  }
-  /* ======== Icon ======== */
-  .teknovus-input-group.icon-area {
-      width: 200px;
-      color: var(--text-deactive);
-  }
-  .teknovus-input-group {
-      position: relative;
-  }
-  .teknovus-input-group .teknovus-icon {
-      position: absolute;
-      padding: 11px 0px;
-      pointer-events: none;
-  }
-  .input-icon-left {
-      left: 3px;
-  }
-  
-  .input-icon-right {
-      right: 3px;
-  }
-  /* ========== Border-all class for Contained Input Field ========== */
-  .border-all {
-      border: 1px solid var(--input-border-focus);
-      border-radius: 8px;
-  }
-  .border-all:focus {
-      border-radius: 8px;
-      border: none;
-      border: 1.5px solid var(--input-border-focus);
-  }
-  .border-all ~ .teknovus-label {
-      bottom: 95%;
-      line-height: 1;
-      opacity: 1;
-      padding: 4px;
-  }
-  /* .border-all~.input-icon-left{
+
+.btn-success {
+    background: var(--success) !important;
+}
+.btn-success:hover {
+    background: var(--success-dark) !important;
+}
+
+.btn-info {
+    background: var(--info) !important;
+    color: var(--text-white) !important;
+}
+.btn-info:hover {
+    background: var(--info-dark) !important;
+}
+
+.btn-warning {
+    background: var(--warning) !important;
+}
+.btn-warning:hover {
+    background: var(--warning-dark) !important;
+}
+
+.btn-danger {
+    background: var(--danger) !important;
+}
+.btn-danger:hover {
+    background: var(--danger-dark) !important;
+}
+
+.btn-primary:disabled {
+    background-color: var(--deactive) ;
+    color: var(--deactive-dark);
+    border: none;
+}
+
+/* ********** badge ********** */
+.badge {
+    border-radius: 2rem;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0.1rem 0.1rem;
+}
+
+/* ********** Line Input Field ********** */
+.teknovus-input-group {
+    position: relative;
+    margin: 20px 0;
+}
+.teknovus-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    outline: none;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--input-border);
+    padding: 0.375rem 1.2rem;
+    color: var(--text-dark);
+    -webkit-appearance: none;
+}
+.teknovus-label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: var(--input-border-focus);
+}
+.teknovus-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.teknovus-input:focus {
+    border: none;
+    border-bottom: 1.5px solid var(--input-border-focus);
+}
+.teknovus-input:focus + .teknovus-label,
+.teknovus-input:invalid + .teknovus-label {
+    bottom: 95%;
+    line-height: 1;
+    opacity: 1;
+    padding: 4px;
+}
+/* ======== Icon ======== */
+.teknovus-input-group.icon-area {
+    width: 200px;
+    color: var(--text-deactive);
+}
+.teknovus-input-group {
+    position: relative;
+}
+.teknovus-input-group .teknovus-icon {
+    position: absolute;
+    padding: 11px 0px;
+    pointer-events: none;
+}
+.input-icon-left {
+    left: 3px;
+}
+
+.input-icon-right {
+    right: 3px;
+}
+/* ========== Border-all class for Contained Input Field ========== */
+.border-all {
+    border: 1px solid var(--input-border-focus);
+    border-radius: 8px;
+}
+.border-all:focus {
+    border-radius: 8px;
+    border: none;
+    border: 1.5px solid var(--input-border-focus);
+}
+.border-all ~ .teknovus-label {
+    bottom: 95%;
+    line-height: 1;
+    opacity: 1;
+    padding: 4px;
+}
+/* .border-all~.input-icon-left{
       left: 3px;
   }
   .border-all~.input-icon-right{
       right: 3px;
   } */
-  
-  /* ********** Dropdown Input ********** */
-  .dropdown-input-label {
-      margin: 0;
-      color: var(--input-text);
-  }
-  .form-select {
-      width: 184px;
-      border: 1px solid var(--input-border);
-      height: 40px;
-      border-radius: 8px;
-  }
-  .form-select:focus {
-      outline: 0 none;
-      border: 1px solid var(--input-border);
-      -webkit-box-shadow: none;
-  }
-  
-  /* ********** teknovus-table ********** */
-  .teknovus-table th,
-  .teknovus-table tr,
-  .teknovus-table tbody {
-      border: 1px solid var(--input-text) !important;
-  }
-  .teknovus-table th {
-      color: var(--text-secondary);
-      font-weight: 500;
-      background-color: var(--dark-500);
-      font-size: 14px;
-      text-align: center;
-  }
-  .teknovus-table tr {
-      color: var(--input-text);
-  }
-  
 
-  @import './font_size.css';
-  @import './paris.css';
+/* ********** Dropdown Input ********** */
+.dropdown-input-label {
+    margin: 0;
+    color: var(--input-text);
+}
+.form-select {
+    width: 184px;
+    border: 1px solid var(--input-border);
+    height: 40px;
+    border-radius: 8px;
+}
+.form-select:focus {
+    outline: 0 none;
+    border: 1px solid var(--input-border);
+    -webkit-box-shadow: none;
+}
+
+/* ********** teknovus-table ********** */
+.teknovus-table th,
+.teknovus-table tr,
+.teknovus-table tbody {
+    border: 1px solid var(--input-text) !important;
+}
+.teknovus-table th {
+    color: var(--text-secondary);
+    font-weight: 500;
+    background-color: var(--dark-500);
+    font-size: 14px;
+    text-align: center;
+}
+.teknovus-table tr {
+    color: var(--input-text);
+}
+@import './font_size.css';
+@import './paris.css';
   
