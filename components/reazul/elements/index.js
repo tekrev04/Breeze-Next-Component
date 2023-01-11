@@ -2,6 +2,8 @@ import React from "react";
 import TypographyComponent from "./typography";
 import ButtonComponent from "./buttonComponent";
 import { BsPlusLg } from "react-icons/bs";
+import SearchComponent from "./searchComponent";
+import NotificationComponent from "./notificationComponent";
 
 function ElementsComponent() {
     const onClick = () => {
@@ -9,161 +11,41 @@ function ElementsComponent() {
     };
     return (
         <div>
+            <SearchComponent onClick={onClick}/>
+            <hr />
+            {/* <NotificationComponent/> */}
+<hr />
             {/* <TypographyComponent /> */}
             <ButtonComponent
-                className={"outline-primary"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-            <ButtonComponent
-                className={"outline-primary"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-            
-            <ButtonComponent
                 className={"outline-success"}
-                btnText={"btn-primary"}
+                btnText={"outline-success"}
                 btnIcon={<BsPlusLg />}
                 onClick={onClick}
                 disabled={false}
             />
             <ButtonComponent
                 className={"outline-success"}
-                btnText={"btn-primary"}
+                btnText={"outline-success"}
                 btnIcon={<BsPlusLg />}
                 onClick={onClick}
                 disabled={true}
             />
             
-            <ButtonComponent
-                className={"outline-info"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-            <ButtonComponent
-                className={"outline-info"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-            
-            <ButtonComponent
-                className={"outline-warning"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-            <ButtonComponent
-                className={"outline-warning"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-            
-            <ButtonComponent
-                className={"outline-danger"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-            <ButtonComponent
-                className={"outline-danger"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-
-            <ButtonComponent
-                className={"btn-primary"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-
-            <ButtonComponent
-                className={"btn-primary"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-
             <ButtonComponent
                 className={"btn-success"}
-                btnText={"btn-primary"}
+                btnText={"btn-success"}
                 btnIcon={<BsPlusLg />}
                 onClick={onClick}
-                disabled={true}
+                disabled={false}
             />
-
             <ButtonComponent
                 className={"btn-success"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-
-            <ButtonComponent
-                className={"btn-info"}
-                btnText={"btn-primary"}
+                btnText={"btn-success"}
                 btnIcon={<BsPlusLg />}
                 onClick={onClick}
                 disabled={true}
             />
 
-            <ButtonComponent
-                className={"btn-info"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-
-            <ButtonComponent
-                className={"btn-danger"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-
-            <ButtonComponent
-                className={"btn-danger"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-
-            <ButtonComponent
-                className={"btn-warning"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-
-            <ButtonComponent
-                className={"btn-warning"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
         </div>
     );
 }
