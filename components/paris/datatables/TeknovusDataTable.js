@@ -2,7 +2,7 @@ import React from 'react'
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory, { PaginationListStandalone, PaginationProvider, PaginationTotalStandalone, SizePerPageDropdownStandalone } from 'react-bootstrap-table2-paginator';
 
-function TeknovusDataTable({ data, columns, classes }) {
+function TeknovusDataTable(props) {
 
   const paginationOptions = {
     custom: true,
@@ -29,28 +29,28 @@ function TeknovusDataTable({ data, columns, classes }) {
       }
     ]
   }
-  const dataTable = ({ paginationProps, paginationTableProps }) => (
-    <div>
-      <PaginationRow {...paginationProps} />
-      <div>
-        <BootstrapTable
-          classes={classes}
-          noDataIndication="No data found"
-          bootstrap4
-          bordered
-          tabIndexCell
-          condensed
-          keyField='id'
-          data={data}
-          columns={columns}
-          {...paginationTableProps}
-        />
-      </div>
-      <div className='mt-3'>
-        <PaginationRow {...paginationProps} />
-      </div>
-    </div>
-  );
+  // const dataTable = ({ paginationProps, paginationTableProps }) => (
+  //   <div>
+  //     <PaginationRow {...paginationProps} />
+  //     <div>
+  //       <BootstrapTable
+  //         classes={classes}
+  //         noDataIndication="No data found"
+  //         bootstrap4
+  //         bordered
+  //         tabIndexCell
+  //         condensed
+  //         keyField='id'
+  //         data={data}
+  //         columns={columns}
+  //         {...paginationTableProps}
+  //       />
+  //     </div>
+  //     <div className='mt-3'>
+  //       <PaginationRow {...paginationProps} />
+  //     </div>
+  //   </div>
+  // );
 
   return (
 
@@ -61,7 +61,7 @@ function TeknovusDataTable({ data, columns, classes }) {
           paginationFactory(paginationOptions)
         }
       >
-        {dataTable}
+        <DataTable {...props}/>
       </PaginationProvider>
 
     </div>
@@ -139,6 +139,33 @@ const PageButtonRenderer = function ({ page, active, disable, title, onPageChang
       <a href="#" onClick={(e) => { e.preventDefault(); onPageChange(page) }} className={`${is_active} page-link`}>{page}</a>
     </li>
   );
+}
+const DataTable = function(props){
+
+  const {paginationProps, paginationTableProps, data, columns, classes} = props;
+
+    return (
+      <div>
+        <PaginationRow {...paginationProps} />
+        <div>
+          <BootstrapTable
+            classes={classes}
+            noDataIndication="No data found"
+            bootstrap4
+            bordered
+            tabIndexCell
+            condensed
+            keyField='id'
+            data={data}
+            columns={columns}
+            {...paginationTableProps}
+          />
+        </div>
+        <div className='mt-3'>
+          <PaginationRow {...paginationProps} />
+        </div>
+      </div>
+    )
 }
 
 export default TeknovusDataTable
