@@ -4,44 +4,166 @@ import ButtonComponent from "./buttonComponent";
 import { BsPlusLg } from "react-icons/bs";
 
 function ElementsComponent() {
-    const handleClick = () => {
+    const onClick = () => {
         console.log("clicked btn");
     };
     return (
         <div>
             {/* <TypographyComponent /> */}
             <ButtonComponent
-                class={"outline-primary"}
+                className={"outline-primary"}
                 btnText={"btn-primary"}
                 btnIcon={<BsPlusLg />}
-                btnOnClick={handleClick}
+                onClick={onClick}
                 disabled={false}
             />
             <ButtonComponent
-                class={"outline-primary"}
+                className={"outline-primary"}
                 btnText={"btn-primary"}
                 btnIcon={<BsPlusLg />}
-                btnOnClick={handleClick}
+                onClick={onClick}
                 disabled={true}
             />
-           
+            
             <ButtonComponent
-                class={"btn-primary"}
+                className={"outline-success"}
                 btnText={"btn-primary"}
                 btnIcon={<BsPlusLg />}
-                btnOnClick={handleClick}
-                disabled={true}
-            />
-           
-            <ButtonComponent
-                class={"btn-primary"}
-                btnText={"btn-primary"}
-                btnIcon={<BsPlusLg />}
-                btnOnClick={handleClick}
+                onClick={onClick}
                 disabled={false}
             />
-           
+            <ButtonComponent
+                className={"outline-success"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+            
+            <ButtonComponent
+                className={"outline-info"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+            <ButtonComponent
+                className={"outline-info"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+            
+            <ButtonComponent
+                className={"outline-warning"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+            <ButtonComponent
+                className={"outline-warning"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+            
+            <ButtonComponent
+                className={"outline-danger"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+            <ButtonComponent
+                className={"outline-danger"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
 
+            <ButtonComponent
+                className={"btn-primary"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+
+            <ButtonComponent
+                className={"btn-primary"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+
+            <ButtonComponent
+                className={"btn-success"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+
+            <ButtonComponent
+                className={"btn-success"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+
+            <ButtonComponent
+                className={"btn-info"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+
+            <ButtonComponent
+                className={"btn-info"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+
+            <ButtonComponent
+                className={"btn-danger"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+
+            <ButtonComponent
+                className={"btn-danger"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+
+            <ButtonComponent
+                className={"btn-warning"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+
+            <ButtonComponent
+                className={"btn-warning"}
+                btnText={"btn-primary"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
         </div>
     );
 }

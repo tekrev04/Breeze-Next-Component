@@ -287,38 +287,60 @@ h6 {
 }
 
 .btn-success {
-    background: var(--success) !important;
+    background: var(--success);
 }
 .btn-success:hover {
-    background: var(--success-dark) !important;
+    background: var(--success-dark);
+}
+.outline-success {
+    border: 1px solid var(--success);
+    color: var(--success);
 }
 
 .btn-info {
-    background: var(--info) !important;
-    color: var(--text-white) !important;
+    background: var(--info);
+    color: var(--text-white);
 }
 .btn-info:hover {
-    background: var(--info-dark) !important;
+    background: var(--info-dark);
+}
+.outline-info {
+    border: 1px solid var(--info);
+    color: var(--info);
 }
 
 .btn-warning {
-    background: var(--warning) !important;
+    background: var(--warning);
 }
 .btn-warning:hover {
-    background: var(--warning-dark) !important;
+    background: var(--warning-dark);
+}
+.outline-warning {
+    border: 1px solid var(--warning);
+    color: var(--warning);
 }
 
 .btn-danger {
-    background: var(--danger) !important;
+    background: var(--danger);
 }
 .btn-danger:hover {
-    background: var(--danger-dark) !important;
+    background: var(--danger-dark);
+}
+.outline-danger {
+    border: 1px solid var(--danger);
+    color: var(--danger);
 }
 
-.btn-primary:disabled {
+.btn-primary:disabled, .btn-success:disabled, .btn-info:disabled, .btn-warning:disabled, .btn-danger:disabled {
     background-color: var(--deactive) ;
     color: var(--deactive-dark);
     border: none;
+}
+
+.outline-primary:disabled, .outline-success:disabled, .outline-info:disabled, .outline-warning:disabled, .outline-danger:disabled {
+    background-color: var(--light) ;
+    color: var(--deactive-dark);
+    border: 1px solid var(--deactive);
 }
 
 /* ********** badge ********** */
@@ -450,6 +472,7 @@ h6 {
 .form-select:focus {
     outline: 0 none;
     border: 1px solid var(--input-border);
+    box-shadow: none;
     -webkit-box-shadow: none;
 }
 

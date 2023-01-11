@@ -2,16 +2,16 @@ import React from "react";
 import { BsPlusLg } from "react-icons/bs";
 
 function ButtonComponent(props) {
-    console.log(props);
+    const {className, btnText, btnIcon, onClick, disabled } = props;
     return (
         <div>
             <button
-                className={`btn ${props.class}`}
-                disabled={props.disabled === true ? true : false}
-                onClick={props.btnOnClick}>
+                className={`btn ${className}`}
+                disabled={disabled === true ? true : false}
+                onClick={onClick}>
                 <div className="btn-flex">
-                    {props.btnText}
-                    <span>{props.btnIcon}</span>
+                    {btnText}
+                    <span>{btnIcon}</span>
                 </div>
             </button>
         </div>
