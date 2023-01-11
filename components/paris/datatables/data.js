@@ -2999,4 +2999,4 @@ export const user_data = [
     {"id":"2998","style_id":"115232","buyer_name":"Caterina Mueller","style_name":"Style three","order_quantity":"10000000","no_of_po":"{\"draft\":4,\"published\":4,\"qa\":4,\"running\":4}","fob":"17.6","owner":"Tamia Frami","published":"1988-07-03","next_shipment":"1974-01-31","created_at":"2022-12-17 11:17:16","updated_at":"2022-12-17 11:17:16"},
     {"id":"2999","style_id":"640869","buyer_name":"Abdullah Ryan","style_name":"My style","order_quantity":"10000000","no_of_po":"{\"draft\":0,\"published\":0,\"qa\":0,\"running\":0}","fob":"36.9","owner":"Candelario Rice","published":"1993-08-18","next_shipment":"2009-03-30","created_at":"2022-12-17 11:17:16","updated_at":"2022-12-17 11:17:16"},
     {"id":"3000","style_id":"168809","buyer_name":"Chase Morissette","style_name":"Style 1","order_quantity":"10000000","no_of_po":"{\"draft\":1,\"published\":5,\"qa\":3,\"running\":5}","fob":"61.5","owner":"Reginald Moore","published":"2019-03-02","next_shipment":"2006-09-20","created_at":"2022-12-17 11:17:16","updated_at":"2022-12-17 11:17:16"}
-    ]
+]
