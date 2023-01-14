@@ -5,7 +5,7 @@ import { BsPlusLg } from "react-icons/bs";
 import SearchComponent from "./searchComponent";
 import NotificationComponent from "./notificationComponent";
 import MenuButtonComponent from "./menuButtonComponent";
-import HeaderAreaComponent from "../headerArea";
+import SelectBoxComponent from "./selectBoxComponent";
 
 function ElementsComponent() {
     const onClick = () => {
@@ -13,6 +13,8 @@ function ElementsComponent() {
     };
     return (
         <div>
+            {/* Select-Box */}
+            <SelectBoxComponent/>
 
             <SearchComponent onClick={onClick} />
 
