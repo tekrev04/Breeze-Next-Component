@@ -1,6 +1,7 @@
 import React from "react";
 
 function SelectBoxComponent() {
+  const disabled = false;
     const options = [
         {
             label: "Apple",
@@ -22,8 +23,8 @@ function SelectBoxComponent() {
 
     return (
         <>
-            <div className="select-container mb-3 xl:w-96">
-                <select className="form-select form-select-lg mb-3 appearance-none block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+            <div className="select-container mb-3 ">
+                <select disabled={disabled === true ? true : false} className={`form-select mb-3 block w-full px-4 py-2 border border-solid rounded transition ease-in-out m-0 focus:text-dark focus:bg-white focus:border-blue-600 focus:outline-none `}>
                     {options.map((option) => (
                         <option value={option.value}>{option.label}</option>
                     ))}
