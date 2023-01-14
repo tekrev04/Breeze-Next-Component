@@ -5,6 +5,7 @@ import { BsPlusLg } from "react-icons/bs";
 import SearchComponent from "./searchComponent";
 import NotificationComponent from "./notificationComponent";
 import MenuButtonComponent from "./menuButtonComponent";
+import HeaderAreaComponent from "../headerArea";
 
 function ElementsComponent() {
     const onClick = () => {
@@ -12,6 +13,7 @@ function ElementsComponent() {
     };
     return (
         <div>
+
             <SearchComponent onClick={onClick} />
 
             {/* menu-button component */}

@@ -1,5 +1,6 @@
 import ElementsComponent from "@/components/reazul/elements";
 import TypographyComponent from "@/components/reazul/elements/typographyComponent";
+import HeaderAreaComponent from "@/components/reazul/headerArea";
 import ReazulNavComponent from "@/components/reazul/navs/ReazulNavComponent";
 import React, { Component } from "react";
 
@@ -9,6 +10,8 @@ export default class Elements extends Component {
             <div className="container mt-5">
                 <div className="card p-3">
                     <ReazulNavComponent />
+                    <HeaderAreaComponent/>
+
                     <h3 className="text-center font-bold text-red-500"> TechRev 4.0 DataTable Component</h3>
                     <div className="row mt-5">
                         <div className="col-md-9">
