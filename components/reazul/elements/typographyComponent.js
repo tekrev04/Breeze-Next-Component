@@ -20,7 +20,7 @@ const text_info = "text-info";
 const text_warning = "text-warning";
 const text_danger = "text-danger";
 const text_dark = "text-dark";
-const text_deactive = "text-deactive";
+const text_disable = "text-disable";
 const text_white = "text-white";
 
 function TypographyComponent() {
@@ -112,9 +112,9 @@ function TypographyComponent() {
                             <p>text-dark</p>
                         </div>
                     </CopyToClipboard>
-                    <CopyToClipboard text={text_deactive} onCopy={() => alert(`${text_deactive}`)}>
-                        <div className="col-2 border text-deactive m-1 cursor-pointer">
-                            <p>text-deactive</p>
+                    <CopyToClipboard text={text_disable} onCopy={() => alert(`${text_disable}`)}>
+                        <div className="col-2 border text-disable m-1 cursor-pointer">
+                            <p>text-disable</p>
                         </div>
                     </CopyToClipboard>
                     <CopyToClipboard text={text_white} onCopy={() => alert(`${text_white}`)}>
@@ -123,8 +123,8 @@ function TypographyComponent() {
                         </div>
                     </CopyToClipboard>
 
-                    <div className="col-2 border text-deactive m-1 cursor-pointer">
-                        <p>text-deactive</p>
+                    <div className="col-2 border text-disable m-1 cursor-pointer">
+                        <p>text-disable</p>
                     </div>
                 </div>
             </section>

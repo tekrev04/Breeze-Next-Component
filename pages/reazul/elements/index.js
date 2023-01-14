@@ -1,5 +1,5 @@
 import ElementsComponent from "@/components/reazul/elements";
-import TypographyComponent from "@/components/reazul/elements/typography";
+import TypographyComponent from "@/components/reazul/elements/typographyComponent";
 import ReazulNavComponent from "@/components/reazul/navs/ReazulNavComponent";
 import React, { Component } from "react";
 

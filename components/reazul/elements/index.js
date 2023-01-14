@@ -1,5 +1,5 @@
 import React from "react";
-import TypographyComponent from "./typography";
+import TypographyComponent from "./typographyComponent";
 import ButtonComponent from "./buttonComponent";
 import { BsPlusLg } from "react-icons/bs";
 import SearchComponent from "./searchComponent";
@@ -16,11 +16,23 @@ function ElementsComponent() {
 
             {/* menu-button component */}
             <hr />
-            <MenuButtonComponent/>
-            
+            <MenuButtonComponent
+                btnText={"Menu Button Active"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                isActive={true}
+            />
+
+            <MenuButtonComponent
+                btnText={"Menu Button Inactive"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                isActive={false}
+            />
+
             {/* notification component */}
             <hr />
-            <NotificationComponent hasNotification={false}/>
+            <NotificationComponent hasNotification={false} />
 
             <hr />
             {/* <TypographyComponent /> */}

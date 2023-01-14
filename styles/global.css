@@ -49,6 +49,7 @@
     /* Others */
     --inactive: #7c7c7c;
     --disable: #eaeaea;
+    --text-disable: #a8a8a8;
     --bg-disable: #f5f5f5;
 
     --input-text: #a8a8a8;
@@ -208,8 +209,8 @@ h6 {
 .text-dark {
     color: var(--text-dark) !important;
 }
-.text-deactive {
-    color: var(---text-disable) !important;
+.text-disable {
+    color: var(--text-disable) !important;
 }
 .text-white {
     color: var(--text-white) !important;
