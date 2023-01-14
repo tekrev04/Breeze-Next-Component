@@ -240,6 +240,9 @@ h6 {
 .bg-dark {
     background: var(--dark) !important;
 }
+.bg-disable {
+    background-color: var(--bg-disable);
+}
 
 /* ********** btn ********** */
 .btn {
