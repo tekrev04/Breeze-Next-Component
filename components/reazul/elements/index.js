@@ -4,6 +4,7 @@ import ButtonComponent from "./buttonComponent";
 import { BsPlusLg } from "react-icons/bs";
 import SearchComponent from "./searchComponent";
 import NotificationComponent from "./notificationComponent";
+import MenuButtonComponent from "./menuButtonComponent";
 
 function ElementsComponent() {
     const onClick = () => {
@@ -12,8 +13,13 @@ function ElementsComponent() {
     return (
         <div>
             <SearchComponent onClick={onClick} />
-            <hr />
 
+            {/* menu-button component */}
+            <hr />
+            <MenuButtonComponent/>
+            
+            {/* notification component */}
+            <hr />
             <NotificationComponent hasNotification={false}/>
 
             <hr />
