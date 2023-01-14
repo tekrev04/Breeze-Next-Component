@@ -11,11 +11,16 @@ function ElementsComponent() {
     };
     return (
         <div>
-            <SearchComponent onClick={onClick}/>
+            <SearchComponent onClick={onClick} />
             <hr />
-            {/* <NotificationComponent/> */}
-<hr />
+
+            <NotificationComponent hasNotification={false}/>
+
+            <hr />
             {/* <TypographyComponent /> */}
+
+            {/* button-area start */}
+            <hr />
             <ButtonComponent
                 className={"outline-success"}
                 btnText={"outline-success"}
@@ -26,26 +31,26 @@ function ElementsComponent() {
             <ButtonComponent
                 className={"outline-success"}
                 btnText={"outline-success"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={true}
-            />
-            
-            <ButtonComponent
-                className={"btn-success"}
-                btnText={"btn-success"}
-                btnIcon={<BsPlusLg />}
-                onClick={onClick}
-                disabled={false}
-            />
-            <ButtonComponent
-                className={"btn-success"}
-                btnText={"btn-success"}
                 btnIcon={<BsPlusLg />}
                 onClick={onClick}
                 disabled={true}
             />
 
+            <ButtonComponent
+                className={"btn-success"}
+                btnText={"btn-success"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={false}
+            />
+            <ButtonComponent
+                className={"btn-success"}
+                btnText={"btn-success"}
+                btnIcon={<BsPlusLg />}
+                onClick={onClick}
+                disabled={true}
+            />
+            {/* button-area end */}
         </div>
     );
 }
