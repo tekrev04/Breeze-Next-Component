@@ -4,53 +4,7 @@ import paginationFactory, { PaginationListStandalone, PaginationProvider, Pagina
 
 function TeknovusDataTable(props) {
 
-  const paginationOptions = {
-    custom: true,
-    sizePerPage: 10,
-    firstPageText: 'First',
-    prePageText: ' ← ',
-    nextPageText: '→',
-    lastPageText: "Last",
-    totalSize: data.length,
-    sizePerPageRenderer: SizePerPageRenderer,
-    paginationTotalRenderer: PaginaTotalRenderer,
-    pageButtonRenderer: PageButtonRenderer,
-    hidePageListOnlyOnePage: true,
-    sizePerPageList: [
-      {
-        text: '10', value: 10
-      }, {
-        text: '15', value: 15
-      }, {
-        text: '20', value: 20
-      },
-      {
-        text: '25', value: 25
-      }
-    ]
-  }
-  // const dataTable = ({ paginationProps, paginationTableProps }) => (
-  //   <div>
-  //     <PaginationRow {...paginationProps} />
-  //     <div>
-  //       <BootstrapTable
-  //         classes={classes}
-  //         noDataIndication="No data found"
-  //         bootstrap4
-  //         bordered
-  //         tabIndexCell
-  //         condensed
-  //         keyField='id'
-  //         data={data}
-  //         columns={columns}
-  //         {...paginationTableProps}
-  //       />
-  //     </div>
-  //     <div className='mt-3'>
-  //       <PaginationRow {...paginationProps} />
-  //     </div>
-  //   </div>
-  // );
+  const paginationOptions = getPaginationOptions(props);
 
   return (
 
@@ -61,7 +15,7 @@ function TeknovusDataTable(props) {
           paginationFactory(paginationOptions)
         }
       >
-        <DataTable {...props}/>
+        <DataTable {...props} />
       </PaginationProvider>
 
     </div>
@@ -140,32 +94,63 @@ const PageButtonRenderer = function ({ page, active, disable, title, onPageChang
     </li>
   );
 }
-const DataTable = function(props){
 
-  const {paginationProps, paginationTableProps, data, columns, classes} = props;
+function getPaginationOptions(props) {
 
-    return (
+  const { data } = props;
+
+  const paginationOptions = {
+    custom: true,
+    sizePerPage: 10,
+    firstPageText: 'First',
+    prePageText: ' ← ',
+    nextPageText: '→',
+    lastPageText: "Last",
+    totalSize: data.length,
+    sizePerPageRenderer: SizePerPageRenderer,
+    paginationTotalRenderer: PaginaTotalRenderer,
+    pageButtonRenderer: PageButtonRenderer,
+    hidePageListOnlyOnePage: true,
+    sizePerPageList: [
+      {
+        text: '10', value: 10
+      }, {
+        text: '15', value: 15
+      }, {
+        text: '20', value: 20
+      },
+      {
+        text: '25', value: 25
+      }
+    ]
+  }
+}
+const DataTable = function (props) {
+
+  const { paginationProps, paginationTableProps, data, columns, classes } = props;
+
+  return (
+    <div>
+      <PaginationRow {...paginationProps} />
       <div>
-        <PaginationRow {...paginationProps} />
-        <div>
-          <BootstrapTable
-            classes={classes}
-            noDataIndication="No data found"
-            bootstrap4
-            bordered
-            tabIndexCell
-            condensed
-            keyField='id'
-            data={data}
-            columns={columns}
-            {...paginationTableProps}
-          />
-        </div>
-        <div className='mt-3'>
-          <PaginationRow {...paginationProps} />
-        </div>
+        <BootstrapTable
+          classes={classes}
+          noDataIndication="No data found"
+          bootstrap4
+          bordered
+          tabIndexCell
+          condensed
+          keyField='id'
+          data={data}
+          columns={columns}
+          {...paginationTableProps}
+        />
       </div>
-    )
+      <div className='mt-3'>
+        <PaginationRow {...paginationProps} />
+      </div>
+    </div>
+  )
 }
 
 export default TeknovusDataTable
