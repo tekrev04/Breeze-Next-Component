@@ -562,3 +562,89 @@ h6 {
 .teknovus-table tr {
     color: var(--input-text);
 }
+
+
+
+
+
+/* *********************** Added from FARABI vai *********************** */
+
+/* for not active navbar */
+.sidebar{
+    height: 55px;
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+    align-items: center;   
+}
+
+.sidebar-icon{
+    color: var(--dark-700);
+    display: flex;
+    margin-top: 5px;
+    padding-right: 10px;
+    
+    }
+
+
+    /* for active navbar */
+
+.active{
+    height: 55px;
+    background-color: var(--dark-400);
+    color: var(--success);
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+
+}
+
+/* for sidebar title */
+.header-box{
+    color: var(--success);
+    margin-left: 40px;
+
+}
+
+
+.userfooter{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: var(--success);
+   
+}
+
+
+/* For footer */
+.userAvatar{
+    display: flex;
+    margin-left: 40px;
+}
+
+.userDetail{
+    margin-left: 15px;
+}
+
+.sideNav{
+    margin-left: 40px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: var(--success);
+}
+
+
+ /* *********************** Ended from FARABI *********************** */

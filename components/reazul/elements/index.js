@@ -7,6 +7,9 @@ import NotificationComponent from "./notificationComponent";
 import MenuButtonComponent from "./menuButtonComponent";
 import SelectBoxComponent from "./selectBoxComponent";
 import InputBoxComponent from "./inputBoxComponent";
+import SidebarTitleComponent from "../sidebarTitle";
+import TekrevTitleComponent from "../tekrevTitle";
+import UserAvatarComponent from "../userAvatar";
 
 function ElementsComponent() {
     const onClick = () => {
@@ -19,8 +22,22 @@ function ElementsComponent() {
         setMessage(event.target.value);
     };
 
+    // from farabi
+    const userimg = "";
+    const userName = "mahian farabi"
+    // end farabi
+
     return (
         <div>
+            <section className="card border-2 border-red-500 my-3">
+                {/* Start from Farabi */}
+                <TekrevTitleComponent />
+                <SidebarTitleComponent/>
+                <UserAvatarComponent userName={userName} userimg={userimg}/>
+                {/* End from Farabi */}
+            </section>
+
+            
             {/* Select-Box */}
             <SelectBoxComponent 
                 disabled={false}
@@ -28,7 +45,6 @@ function ElementsComponent() {
             <SelectBoxComponent 
                 disabled={true}
             />
-
 
             {/* Input box component */}
             <InputBoxComponent
