@@ -5,7 +5,7 @@ const MenuHeaderComponent = (props) => {
   const [activeButton, setActiveButton] = useState(0);
 
   return (
-    <div className="button-list">
+    <>
       {menuBtnInfo.map((buttonInfo, index) => (
         <button
           key={index}
@@ -18,7 +18,7 @@ const MenuHeaderComponent = (props) => {
           </div>
         </button>
       ))}
-    </div>
+    </>
   );
 };
 export default MenuHeaderComponent;
