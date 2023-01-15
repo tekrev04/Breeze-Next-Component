@@ -373,6 +373,43 @@ h6 {
     border: 1px solid var(--disable-dark);
 }
 
+/* ********** Menu-btn ********** */
+:root{
+    --dark-900: #515151;
+    --dark-800: #7c7c7c; /* inactive */
+    --dark-700: #a8a8a8; /* input-text, disable-dark */
+    --dark-600: #d3d3d3; /* border */
+    --dark-500: #eaeaea; /* disable,  */
+    --dark-400: #f5f5f5; /* bg-disable */
+
+    /* Others */
+    --inactive: #7c7c7c;
+    --disable: #eaeaea;
+    --text-disable: #a8a8a8;
+    --bg-disable: #f5f5f5;
+
+    --input-text: #a8a8a8;
+    --border: #eaeaea;
+    --disable-dark: #a8a8a8;
+
+    --bg-gray: #eaeaea;
+}
+.menu-btn {
+    background-color: var(--disable);
+    border: none;
+    color: var(--disable-dark);
+}
+.menu-btn:hover, .menu-btn:focus {
+    background-color: var(--dark-600);
+    color: var(--disable-dark);
+    border: none;
+}
+.menu-btn-active, .menu-btn-active:hover {
+    background-color: var(--white);
+    color: var(--disable-dark);
+    border: 1px solid var(--border);
+}
+
 /* ********** badge ********** */
 .badge {
     border-radius: 2rem;
