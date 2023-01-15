@@ -80,15 +80,22 @@ export default class DataTablesPage extends Component {
                             <hr></hr>
                             <h5 className='mb-3'> Dependencies </h5>
 
-                            <p><b># npm i react-bootstrap-table-next --save</b> </p>
-                            Or
-                            <p><b> # yarn add react-bootstrap-table-next </b></p>
+                            <p><b> # yarn add react-bootstrap-table-next react-bootstrap-table2-paginator </b></p> 
                             <hr></hr>
                             <h5 className='mb-3 mt-3'> Syntax </h5>
 
                             <code>
-                                TeknovusDataTable &raqt;
+                                &lt;TeknovusDataTable&frasl;&gt;
                             </code>
+
+                            <h5 className='mb-3 mt-3'> Props </h5>
+                            <p><b> <span className='text-danger'> Required </span>. data</b> [Array of object]</p>
+                            <p className='fs-12 text-muted'><b>data</b> must be an array of object having unique id property. </p>
+
+                            <p><b> <span className='text-danger'> Required </span>. columns </b> [Array of object]</p>
+                            <p className='fs-12'><b>data</b> must be an array of object having  columnd defination with two mendatory property <b>dataField - string (represent jso property name)</b> and text - sting (column name)</p>
+                            <p> Check  <a href='https://react-bootstrap-table.github.io/react-bootstrap-table2/docs/column-props.html' target="_blank">here</a> for advance examples</p>
+
 
                         </div>
 
