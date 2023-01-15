@@ -22,13 +22,27 @@ function ElementsComponent() {
     return (
         <div>
             {/* Select-Box */}
-            <SelectBoxComponent />
+            <SelectBoxComponent 
+                disabled={false}
+            />
+            <SelectBoxComponent 
+                disabled={true}
+            />
+
 
             {/* Input box component */}
             <InputBoxComponent
                 inputLabel={"Input Label"}
                 inputPlaceholder={"Placeholder..."}
                 disabled={false}
+                message={message}
+                setMessage={setMessage}
+                handleChange={handleChange}
+            />
+            <InputBoxComponent
+                inputLabel={"Input Label"}
+                inputPlaceholder={"Placeholder..."}
+                disabled={true}
                 message={message}
                 setMessage={setMessage}
                 handleChange={handleChange}
