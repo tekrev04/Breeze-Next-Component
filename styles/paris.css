@@ -107,4 +107,24 @@
   
       text-align: center;
   }
+
+  div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_paginate {
+        text-align: right;
+ }
+ .dataTables_paginate .pagination {
+
+    justify-content: end !important;
+ }
+ .dataTables_length {
+    display: block;
+    text-align: left;
+}
+div.dataTables_wrapper div.dataTables_length select {
+    width: auto;
+    display: inline-block;
+}
+.dataTables_length .form-select {
+
+    border: 1px solid #d9dee3 !important;
+}
   /* end */
