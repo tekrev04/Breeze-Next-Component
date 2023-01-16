@@ -398,11 +398,11 @@ h6 {
     background-color: var(--disable);
     border: none;
     color: var(--disable-dark);
+    border: 1px solid transparent;
 }
 .menu-btn:hover, .menu-btn:focus {
     background-color: var(--dark-600);
     color: var(--disable-dark);
-    border: none;
 }
 .menu-btn-active, .menu-btn-active:hover {
     background-color: var(--white);
