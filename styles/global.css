@@ -568,14 +568,13 @@ h6 {
 
 
 /* *********************** Added from FARABI vai *********************** */
-
 /* for not active navbar */
 .sidebar{
     height: 55px;
     font-size: large;
     list-style-type: none;
-    display: flex;
-    align-items: center;   
+    align-items: center;
+    display: flex;  
 }
 
 .sidebar-icon{
@@ -586,9 +585,7 @@ h6 {
     
     }
 
-
-    /* for active navbar */
-
+/* for active navbar */
 .active{
     height: 55px;
     background-color: var(--dark-400);
@@ -600,14 +597,7 @@ h6 {
 
 }
 
-/* for sidebar title */
-.header-box{
-    color: var(--success);
-    margin-left: 40px;
-
-}
-
-
+/* For footer */
 .userfooter{
     width: 50px;
     height: 50px;
@@ -620,11 +610,8 @@ h6 {
    
 }
 
-
-/* For footer */
 .userAvatar{
     display: flex;
-    margin-left: 40px;
 }
 
 .userDetail{
@@ -645,6 +632,4 @@ img{
     text-align: center;
     background: var(--success);
 }
-
-
  /* *********************** Ended from FARABI *********************** */

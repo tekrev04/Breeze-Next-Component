@@ -3,11 +3,7 @@
 import React from "react";
 
 function TekrevTitleComponent() {
-  return (
-    <div class="header-box">
-      <h2>TechRev 4.0</h2>
-    </div>
-  );
+    return <h3 className="text-success px-4">TechRev 4.0</h3>;
 }
 
 export default TekrevTitleComponent;
