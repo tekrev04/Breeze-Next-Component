@@ -1,0 +1,16 @@
+.dropdown-input-label {
+    margin: 0;
+    color: var(--input-text);
+}
+.form-select {
+    width: 184px;
+    border: 1px solid var(--input-border);
+    height: 40px;
+    border-radius: 8px;
+}
+.form-select:focus {
+    outline: 0 none;
+    border: 1px solid var(--input-border);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}

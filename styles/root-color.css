@@ -1,0 +1,58 @@
+:root {
+    /* font-family */
+    --font-family: "Montserrat";
+
+    /* Text Colors */
+    --text-primary: #5873cf;
+    --text-secondary: #515151;
+    --text-success: #50af47;
+    --text-info: #79bdab;
+    --text-warning: #ffee11;
+    --text-danger: #ff5500;
+    --text-dark: #000000;
+    --text-disable: #7c7c7c;
+    --text-white: #ffffff;
+
+    /* Theme Color */
+    --primary: #5873cf;
+    --primary-dark: #4564ca;
+    --primary-light: #b5c1ea;
+
+    --secondary: #515151;
+
+    --success: #50af47;
+    --success-dark: #447f40;
+    --success-light: #81be6e;
+
+    --info: #79bdab;
+    --info-dark: #6ca898;
+    --info-light: #afd7cd;
+
+    --warning: #ffee11;
+    --warning-dark: #e7d728;
+    --warning-light: #fef28b;
+
+    --danger: #ff5500;
+    --danger-dark: #c14f27;
+    --danger-light: #f3723a;
+
+    --dark: #000000;
+    --dark-900: #515151;
+    --dark-800: #7c7c7c;
+    --dark-700: #a8a8a8;
+    --dark-600: #d3d3d3;
+    --dark-500: #eaeaea;
+    --dark-400: #f5f5f5;
+
+    --white: #ffffff;
+
+    /* Others */
+    --inactive: #7c7c7c;
+    --disable: #eaeaea;
+    --text-disable: #a8a8a8;
+    --bg-disable: #f5f5f5;
+
+    --input-text: #a8a8a8;
+    --border: #eaeaea;
+    --disable-dark: #a8a8a8;
+}

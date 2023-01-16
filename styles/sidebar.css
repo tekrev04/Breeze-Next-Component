@@ -1,0 +1,25 @@
+.sidebar{
+    height: 55px;
+    font-size: large;
+    list-style-type: none;
+    align-items: center;
+    display: flex;  
+}
+
+.sidebar-icon{
+    color: var(--dark-700);
+    display: flex;
+    margin-top: 5px;
+    padding-right: 10px;
+    
+    }
+
+.active{
+    height: 55px;
+    background-color: var(--dark-400);
+    color: var(--success);
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+}

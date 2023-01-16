@@ -1,0 +1,27 @@
+.bg-primary {
+    background: var(--primary) !important;
+}
+.bg-secondary {
+    background: var(--secondary) !important;
+}
+.bg-success {
+    background: var(--success) !important;
+}
+.bg-info {
+    background: var(--info) !important;
+}
+.bg-warning {
+    background: var(--warning) !important;
+}
+.bg-danger {
+    background: var(--danger) !important;
+}
+.bg-light {
+    background: var(--white) !important;
+}
+.bg-dark {
+    background: var(--dark) !important;
+}
+.bg-disable {
+    background-color: var(--bg-disable);
+}

@@ -1,0 +1,25 @@
+.teknovus-table th,
+.teknovus-table tr,
+.teknovus-table tbody {
+    border: 1px solid var(--input-text) !important;
+}
+.teknovus-table th {
+    color: var(--text-secondary);
+    font-weight: 500;
+    background-color: var(--dark-500);
+    font-size: 14px;
+    text-align: center;
+}
+.teknovus-table tr {
+    color: var(--input-text);
+}
+
+.teknovus-table tbody tr td {
+  
+    color: #000000;
+}
+
+.centerized tbody tr td {
+
+    text-align: center;
+}
