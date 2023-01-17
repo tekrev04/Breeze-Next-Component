@@ -41,9 +41,11 @@ function ElementsComponent() {
             {/* Select-Box */}
             <SelectBoxComponent 
                 disabled={false}
+                inputLabel={'inputLabel'}
             />
             <SelectBoxComponent 
                 disabled={true}
+                inputLabel={'inputLabel'}
             />
 
             {/* Input box component */}
